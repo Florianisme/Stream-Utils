@@ -1,0 +1,9 @@
+.idea/
+out/
+.idea_modules/
+.gradle
+build/
+!gradle-wrapper.jar
+**/build/
+.project
+.classpath
