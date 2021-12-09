@@ -9,14 +9,14 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class NonNullFilterTest {
+class ElementFilterTest {
 
     @Test
     public void testDiscardNullElements_withNoNullValues() {
         List<String> values = Lists.newArrayList("test0", "test1", "test2");
 
         List<String> collect = values.stream()
-                .filter(NonNullFilter.discardNullElements())
+                .filter(ElementFilter.discardNullElements())
                 .collect(Collectors.toList());
 
         assertEquals(3, collect.size());
@@ -30,7 +30,7 @@ class NonNullFilterTest {
         List<String> values = Lists.newArrayList("test0", null, "test2");
 
         List<String> collect = values.stream()
-                .filter(NonNullFilter.discardNullElements())
+                .filter(ElementFilter.discardNullElements())
                 .collect(Collectors.toList());
 
         assertEquals(2, collect.size());

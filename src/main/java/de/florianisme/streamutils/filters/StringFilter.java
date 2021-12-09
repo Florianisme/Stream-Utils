@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 public class StringFilter {
 
     public static Predicate<String> discardNullOrEmptyValues() {
-        return NonNullFilter.<String>discardNullElements()
+        return ElementFilter.<String>discardNullElements()
                 .and(value -> !value.isEmpty());
     }
 
