@@ -29,8 +29,8 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = 'VERSION_1_11'
-    targetCompatibility = 'VERSION_1_11'
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 
     withJavadocJar()
     withSourcesJar()
