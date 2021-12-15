@@ -16,6 +16,10 @@ implementation 'de.florian-moehle:stream-utils:0.0.3'
 
 ## Classes
 
+### Sorters ```.sorted()```
+#### RandomSorter
+Shuffle the elements of the stream randomly
+
 ### Filters ```.filter()```
 #### ElementFilter
 Filter generic null elements
