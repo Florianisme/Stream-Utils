@@ -36,6 +36,9 @@ java {
     withSourcesJar()
 }
 
+test {
+    useJUnitPlatform()
+}
 
 publishing {
     publications {
