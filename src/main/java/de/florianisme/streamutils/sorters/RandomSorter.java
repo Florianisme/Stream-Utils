@@ -15,6 +15,10 @@ public class RandomSorter {
         this.random = random;
     }
 
+    /**
+     * @return a Comparator which pseudo-randomly shuffles the objects provided to it.
+     * An {@link Random} instance can be passed in with the overloaded constructor {@link RandomSorter#RandomSorter(Random)}
+     */
     @SuppressWarnings("ComparatorMethodParameterNotUsed")
     public <T> Comparator<T> shuffle() {
         return (_object1, _object2) -> getRandomInt();
